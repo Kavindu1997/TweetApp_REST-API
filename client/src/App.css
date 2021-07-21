@@ -2,8 +2,9 @@
   width: 100vw;
   height: auto;
   display: flex;
-  padding: 40px 40px;
-  flex-direction: row;
+  align-items: center;
+  padding-top: 40px;
+  flex-direction: column;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-top: 50px;
   border: 1px solid lightgray;
   font-family: Arial, Helvetica, sans-serif;
 
@@ -32,7 +33,7 @@ body {
 .post .title {
   flex: 20%;
   border-bottom: 1px solid lightgray;
-  background-color:hotpink;
+  background-color: dodgerblue;
   display: grid;
   place-content: center;
   color: white;
@@ -51,8 +52,58 @@ body {
   display: flex;
   align-items: center;
   padding-left: 15px;
-  background-color: hotpink;
+  background-color: dodgerblue;
   color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+/* CREATE POST PAGE CSS */
+
+.createPostPage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color:crimson;
+  border-radius: 5px;
+  color: white;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background-color:yellowgreen;
+}
+
+span {
+  color:gray;
 }
